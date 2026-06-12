@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    font-family:"Inter", sans-serif;
+
+    background-image:
+        url("assets/background/pink-grid.jpeg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+.layout{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+.sidebar{
+
+    width:240px;
+
+    background:white;
+
+    padding:40px 30px;
+
+    box-shadow:
+        4px 0 20px
+        rgba(0,0,0,0.08);
+
+}
+
+.brand{
+
+    color:#d98f9d;
+
+    margin-bottom:50px;
+
+    font-size:1.8rem;
+
+}
+
+.sidebar nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.sidebar a{
+
+    text-decoration:none;
+
+    color:#555;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+}
+
+.sidebar a:hover{
+
+    color:#d98f9d;
+
+}
+
+.hero{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.hero-content{
+
+    max-width:700px;
+
+}
+
+.logo{
+
+    font-size:4.5rem;
+
+    color:#333;
+
+    margin-bottom:20px;
+
+}
+
+.subtitle{
+
+    color:#666;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.button-group{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+.primary{
+
+    background:#d98f9d;
+
+    color:white;
+
+}
+
+.primary:hover{
+
+    background:#c97c8a;
+
+}
+
+.secondary{
+
+    background:white;
+
+    color:#444;
+
+    border:1px solid #ddd;
+
+}
+
+.secondary:hover{
+
+    background:#fafafa;
+
+}

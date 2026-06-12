@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Filters</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="filter.css">
+
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+
+            <h2 class="brand">
+                InstaBooth
+            </h2>
+
+            <nav>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <main class="content">
+
+            <h1 class="title">
+                Filters
+            </h1>
+
+            <p class="subtitle">
+                Choose a filter for each photo.
+            </p>
+
+            <div class="preview-box">
+
+                <img id="previewImage"
+                     src=""
+                     alt="Preview">
+
+            </div>
+
+            <div class="thumbnail-container">
+
+                <div class="thumbnail active"
+                     data-index="0">
+
+                    <img id="thumb1">
+
+                </div>
+
+                <div class="thumbnail"
+                     data-index="1">
+
+                    <img id="thumb2">
+
+                </div>
+
+                <div class="thumbnail"
+                     data-index="2">
+
+                    <img id="thumb3">
+
+                </div>
+
+            </div>
+
+            <div class="filter-buttons">
+
+                <button
+                    class="filter-btn"
+                    id="originalBtn">
+
+                    Original
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    id="grayBtn">
+
+                    Gray
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    id="sepiaBtn">
+
+                    Sepia
+
+                </button>
+
+                <button
+                    class="filter-btn"
+                    id="brightBtn">
+
+                    Bright
+
+                </button>
+
+            </div>
+
+            <button
+                id="chooseThemeBtn"
+                class="btn">
+
+                Continue
+
+            </button>
+
+        </main>
+
+    </div>
+
+    <script src="filter.js"></script>
+
+</body>
+
+</html>
+

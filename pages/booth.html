@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Photobooth</title>
+
+    <link rel="stylesheet"
+          href="booth.css">
+
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+
+            <h2 class="brand">
+                InstaBooth
+            </h2>
+
+            <nav>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <main class="content">
+
+            <h1 class="title">
+                Click.Click.Click! 📸
+            </h1>
+
+            <p class="subtitle">
+                Three photos. One perfect strip.
+            </p>
+
+            <div class="booth-area">
+
+                <div class="camera-preview">
+
+                    <video id="camera"
+                           autoplay>
+                    </video>
+
+                    <div id="countdown">
+
+                        3
+
+                    </div>
+
+                </div>
+
+                <div class="photo-slots">
+
+                    <div class="slot"
+                         id="slot1">
+                    </div>
+
+                    <div class="slot"
+                         id="slot2">
+                    </div>
+
+                    <div class="slot"
+                         id="slot3">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="button-group">
+
+                <button id="startSession"
+                        class="btn primary">
+
+                    Start Session
+
+                </button>
+
+                <button id="retakeBtn"
+                        class="btn secondary">
+
+                    Retake
+
+                </button>
+
+                <button id="continueBtn"
+                        class="btn primary">
+
+                    Continue
+
+                </button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <canvas id="canvas"
+            style="display:none;">
+    </canvas>
+
+    <script src="booth.js"></script>
+
+</body>
+
+</html>

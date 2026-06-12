@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Customize Strip</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="editor.css">
+
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h2 class="brand">
+                InstaBooth
+            </h2>
+
+            <nav>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <!-- Main Editor -->
+
+        <main class="editor-content">
+
+            <!-- Preview Panel -->
+
+            <div class="preview-panel">
+
+    <h1>Customize Strip</h1>
+
+    <div id="stripPreview">
+
+        <div class="strip-slot"></div>
+
+        <div class="strip-slot"></div>
+
+        <div class="strip-slot"></div>
+
+        <div class="strip-footer">
+            InstaBooth ✨
+        </div>
+
+    </div>
+
+</div>
+
+
+            <!-- Controls -->
+
+            <div class="controls-panel">
+
+                <!-- Colors -->
+
+                <div class="accordion">
+
+                    <button
+                        class="accordion-btn"
+                        id="colorsBtn">
+
+                        ▼ Colors
+
+                    </button>
+
+                    <div
+                        class="accordion-content"
+                        id="colorsContent">
+
+                        <div class="color-options">
+
+                            <button
+                                class="color-swatch white"
+                                data-color="#ffffff">
+                            </button>
+
+                            <button
+                                class="color-swatch pink"
+                                data-color="#f7d4dc">
+                            </button>
+
+                            <button
+                                class="color-swatch wine"
+                                data-color="#8b3a4a">
+                            </button>
+
+                            <button
+                                class="color-swatch black"
+                                data-color="#222222">
+                            </button>
+
+                            <button
+                                class="color-swatch lavender"
+                                data-color="#d8c7ff">
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Patterns -->
+
+                
+<div class="accordion">
+
+    <button
+        class="accordion-btn"
+        id="patternsBtn">
+
+        ▶ Backgrounds
+
+    </button>
+
+    <div
+        class="accordion-content"
+        id="patternsContent"
+        style="display:none;">
+        
+
+        <div class="background-grid">
+
+            <img
+                src="../assets/background/blue.jpeg"
+                class="background-thumb"
+                data-bg="../assets/background/blue.jpeg">
+
+            <img
+                src="../assets/background/white.jpeg"
+                class="background-thumb"
+                data-bg="../assets/background/white.jpeg">
+
+            <img
+                src="../assets/background/bow.jpeg"
+                class="background-thumb"
+                data-bg="../assets/background/bow.jpeg">
+
+            <img
+                src="../assets/background/coquette.jpeg"
+                class="background-thumb"
+                data-bg="../assets/background/coquette.jpeg">
+
+            <img
+                src="../assets/background/red.jpeg"
+                class="background-thumb"
+                data-bg="../assets/background/red.jpeg">
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Stickers -->
+
+<div class="accordion">
+
+    <button
+        class="accordion-btn"
+        id="stickersBtn">
+
+        ▶ Stickers
+
+    </button>
+
+    <div
+        class="accordion-content"
+        id="stickersContent"
+        style="display:none;">
+
+        <div class="sticker-categories">
+
+            <button
+                class="sticker-category active"
+                data-category="pink">
+
+                🩷 Pink
+
+            </button>
+
+            <button
+                class="sticker-category"
+                data-category="black">
+
+                🖤 Black
+
+            </button>
+
+            <button
+                class="sticker-category"
+                data-category="blue">
+
+                🩵 Blue
+
+            </button>
+
+        </div>
+
+        <div
+            id="stickerGallery"
+            class="sticker-gallery">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+           
+
+
+                <!-- Download -->
+
+                <button
+                    id="downloadBtn"
+                    class="download-btn">
+
+                    Download Strip
+
+                </button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="editor.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</body>
+
+</html>
+

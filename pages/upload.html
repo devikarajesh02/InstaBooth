@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Photos</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="upload.css">
+
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h2 class="brand">
+                InstaBooth
+            </h2>
+
+            <nav>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="content">
+
+            <h1 class="title">
+                Upload Photos
+            </h1>
+
+            <p class="subtitle">
+                Choose up to three photos for your custom photostrip.
+            </p>
+
+            <!-- Upload Area -->
+
+            <div class="upload-box">
+
+                <div class="upload-icon">
+                    📁
+                </div>
+
+                <p>
+                    Select your photos
+                </p>
+
+                <label
+                    for="fileInput"
+                    class="upload-btn">
+
+                    Choose Photos
+
+                </label>
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    multiple
+                    accept="image/*">
+
+            </div>
+
+            <!-- Preview Area -->
+
+            <div class="preview-area">
+
+                <div class="preview-slot"
+                     id="slot1">
+                </div>
+
+                <div class="preview-slot"
+                     id="slot2">
+                </div>
+
+                <div class="preview-slot"
+                     id="slot3">
+                </div>
+
+            </div>
+
+            <!-- Continue -->
+
+            <button
+                id="continueBtn"
+                class="btn">
+
+                Continue
+
+            </button>
+
+            <!-- Progress Dots -->
+
+            <div class="progress-dots">
+
+                <span class="dot"></span>
+
+                <span class="dot"></span>
+
+                <span class="dot"></span>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="upload.js"></script>
+
+</body>
+
+</html>
+
