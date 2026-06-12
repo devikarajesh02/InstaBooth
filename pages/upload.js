@@ -10,31 +10,53 @@ const slots = [
 ];
 
 // Upload photos
-fileInput.addEventListener("change", () => {
-    const files = fileInput.files;
+fileInput.addEventListener(
+"change",
+() => {
 
-    for (let i = 0; i < files.length; i++) {
-        const emptySlot = slots.find(slot => !slot.querySelector("img"));
+    const files =
+        fileInput.files;
 
-        if (!emptySlot) {
-            alert("You already have 3 photos!");
-            break;
-        }
+    for(
+        let i = 0;
+        i < Math.min(files.length, 3);
+        i++
+    ){
 
-        const imageURL = URL.createObjectURL(files[i]);
+        const reader =
+            new FileReader();
 
-        emptySlot.innerHTML = `
-            <button class="delete-btn">✕</button>
-            <img src="${imageURL}" class="preview-image">
-        `;
+        reader.onload =
+            (e) => {
+
+                slots[i].innerHTML = `
+                    <button class="delete-btn">
+                        ✕
+                    </button>
+
+                    <img
+                        src="${e.target.result}"
+                        class="preview-image">
+                `;
+
+                addDeleteButtons();
+                updateContinueButton();
+                updateDots();
+
+            };
+
+        reader.readAsDataURL(
+            files[i]
+        );
+
     }
 
-    addDeleteButtons();
-    updateContinueButton();
-    updateDots();
-
     fileInput.value = "";
-});
+
+}
+
+
+);
 
 // Delete photo
 function addDeleteButtons() {
